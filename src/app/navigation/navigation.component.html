@@ -1,0 +1,59 @@
+<div id="header" class="nav-collapse nav-solid sticky fadeIn animated">
+<div class="row clearfix">
+        <div class="col-1">
+            <!--Logo-->
+            <div id="logo">
+                <!--Logo that is shown on the banner-->
+                <img src="assets/images/{{page.logo1}}" id="banner-logo" alt="{{page.title}}"/>
+                <!--End of Banner Logo-->
+
+                <!--The Logo that is shown on the sticky Navigation Bar-->
+                <img src="assets/images/{{page.logo2}}" id="navigation-logo" alt="{{page.title}}"/>
+                <!--End of Navigation Logo-->
+
+            </div>
+            <!--End of Logo-->
+
+            <aside>
+
+             <app-social></app-social>
+
+            </aside>
+
+            <!--Main Navigation-->
+            <nav id="nav-main">
+                <ul>
+                    <li>
+                        <a routerLink="/" [class.active]="'home' === activeTab" (click)="onSelect('home')">Home</a>
+                    </li>
+                    <li>
+                        <a routerLink="/login" [class.active]="'login' === activeTab" (click)="onSelect('login')">login</a>
+                    </li>
+                    <li>
+                        <a routerLink="/about" [class.active]="'about' === activeTab" (click)="onSelect('about')">About</a>
+                    </li>
+                    <li>
+                        <a routerLink="/gallery" [class.active]="'gallery' === activeTab" (click)="onSelect('gallery')">Gallery</a>
+                    </li>
+                    <li>
+                        <a routerLink="/services" [class.active]="'services' === activeTab" (click)="onSelect('services')">Services</a>
+                    </li>
+                    <li>
+                        <a routerLink="/testimonials" [class.active]="'testimonials' === activeTab" (click)="onSelect('testimonials')">Testimonials</a>
+                    </li>
+                    <li>
+                        <a routerLink="/clients" [class.active]="'clients' === activeTab" (click)="onSelect('clients')">Clients</a>
+                    </li>
+                    <li>
+                        <a routerLink="/pricing" [class.active]="'pricing' === activeTab" (click)="onSelect('pricing')">Pricing</a>
+                    </li>
+                </ul>
+            </nav>
+            <!--End of Main Navigation-->
+
+            <div id="nav-trigger"><span></span></div>
+            <nav id="nav-mobile"></nav>
+
+        </div>
+    </div>
+</div><!--End of Header-->

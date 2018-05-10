@@ -1,0 +1,14 @@
+<header id="banner" class="scrollto clearfix" data-enllax-ratio=".5" [ngStyle]="{'background': getBackground() , 'background-size':'cover'}">
+    <!--Banner Content-->
+    <div id="banner-content" class="row clearfix">
+        <div class="col-38">
+            <div class="section-heading">
+                <h1>{{header.heading}}{{header.title}}</h1>
+                <h2>{{header.tagline}}</h2>
+            </div>
+            <!--Call to Action-->
+            <a href="{{header.ctaLink}}" class="button">{{header.ctaText | uppercase}}</a>
+            <!--End Call to Action-->
+        </div>
+    </div><!--End of Row-->
+</header>

@@ -1,0 +1,25 @@
+      <!--Clients-->
+      <section id="clients" class="scrollto clearfix">
+          <div class="row clearfix">
+
+              <div class="col-3">
+
+                  <div class="section-heading">
+                      <h3>{{clients.drive}}</h3>
+                      <h2 class="section-title">{{clients.heading}}</h2>
+                      <p class="section-subtitle">{{clients.description}}</p>
+                  </div>
+
+              </div>
+
+              <div class="col-2-3">
+
+                  <a href="#" *ngFor="let company of clients.companies" class="col-3">
+                      <img src="assets/images/company-images/{{company.logo}}" alt="{{company.name}}"/>
+                      <div class="client-overlay"><span>{{company.name | uppercase}}</span></div>
+                  </a>
+              </div>
+
+          </div>
+      </section>
+      <!--End of Clients-->

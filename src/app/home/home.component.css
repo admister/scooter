@@ -1,0 +1,7 @@
+
+#banner {
+    /* background: url(images/banner-image-2.jpg) no-repeat center top; */
+    background-origin: center top;    
+    background-repeat: no-repeat;
+    background-size: cover;
+}

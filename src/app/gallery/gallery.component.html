@@ -1,0 +1,11 @@
+      <!--Gallery-->
+      <aside id="gallery" class="row text-center scrollto clearfix" data-featherlight-gallery
+               data-featherlight-filter="a">
+
+            <a *ngFor="let image of galleryImages" href="assets/images/gallery-images/{{image}}" data-featherlight="image" class="col-4 wow fadeIn"
+                 data-wow-delay="0.1s">
+             <img src="assets/images/gallery-images/{{image}}" alt="Landing Page"/>
+            </a>
+
+      </aside>
+      <!--End of Gallery-->
